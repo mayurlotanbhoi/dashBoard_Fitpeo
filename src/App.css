@@ -1,0 +1,340 @@
+/* Define a root color variable */
+:root {
+    --primary-color: #040440; /* Change this to your desired main color */
+    --secondary-color:#5A32EA;
+    --background-color:#e7ebf3;
+     --shado-color :#2D2D69;
+  }
+   /* Apply some basic styling */
+   body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  /* Reset some default styles for better cross-browser consistency */
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ******navBar**** */
+  .nav-heading{
+    color: white;
+  
+  }
+ .Nav-Bar{
+    background-color: var(--primary-color);
+    height: 100vh;
+
+ }
+ .Nav-Bar{
+  position: sticky;
+  top: 0;
+ }
+ .nav-list{
+    color: #5A5D85;
+ }
+ .nav-list:hover{
+    color:  white;
+    background-color: var(--shado-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+ }
+ .user-profile{
+  width: 80%;
+  background-color: var(--shado-color);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  bottom: 2rem;
+ }
+ .nav-tag{
+    width: 85%;
+ }
+ .NavIcons{
+    font-size: 1.2rem;
+ }
+
+ /* ******Board***** */
+
+ .Board{
+  background-color: var(--background-color);
+ }
+ .Board-left{
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+ }
+ .earning-card{
+  width: 16rem;
+  height: 8.5rem;
+ }
+ .earning-contant{
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: #FFBDE1;
+  color: #DD1327;
+  font-size: 2.5rem;
+ }
+ .earn-contant-box{
+  line-height: 1rem;
+ }
+
+ .earn-contant-box small{
+font-size: 0.7rem;
+color: grey;
+ }
+ 
+ 
+ .earn-contant-box .earn-contant-num{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: black;
+ }
+
+ .earn-contant-arrow{
+  font-size: 0.5rem;
+  font-weight: bolder;
+ }
+ 
+ /* .bar {
+  background-color: var(--background-color); 
+} */
+.month {
+  text-align: center;
+  margin-top: 5px;
+  
+}
+.graf-col{
+  width: 5.5%;
+  display: flex;
+  flex-direction: column-reverse;
+  }
+  .graf-row{
+    height: 33vh;
+  }
+
+  /* *****circule** */
+  .circul {
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 180px;
+    min-height: 180px;
+    border-radius: 50%;
+    border: var(--background-color) solid 1rem;
+    margin: 0 auto; /* Center the element */
+    line-height: 1rem;
+}
+
+.circul-one {
+    position: absolute;
+    /* top: -25px;
+    left: -15px; */
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 180px;
+    min-height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(#A713FF 0% 75%, transparent 0% 100%);
+    /* background:  */
+}
+
+
+.circul-two {
+    /* Add styles for the second circular element, if needed */
+    position: absolute;
+    /* top: -20px;
+    left: -15px; */
+   max-width: 200px;
+   max-height: 200px;
+    min-width: 160px;
+    min-height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#5A32EA 0% 25%, transparent 0% 100%);
+    
+}
+
+.chart-text h3{
+  color: black;
+  
+}
+.chart-text p{
+color: white;
+}
+/* #0AAE54 */
+
+  
+
+
+  
+  
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+  
+    .search-imput{
+      width: 200px;
+      float: right;
+    }
+    .nav-ul{
+        display: flex;
+    }
+
+    .Nav-Bar {
+      position: fixed;
+      top: 0;
+      height: 15vh;
+      width: 107vw;
+      overflow: hidden;
+      z-index: 9999; 
+      
+    }
+    .Board-left{
+      padding: 0 1rem;
+      margin-top: 10rem !important;
+      margin-left: 0.6rem;
+    }
+    
+      
+      
+      .nav-ul {
+        width: 100%; /* Use 100% to match the parent's width */
+        white-space: nowrap; /* Prevent line breaks */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Hide vertical scrollbar */
+       
+      }
+      .nav-list{
+        margin-right: 0.8rem;
+        
+      }
+      .nav-list small{
+        margin-right: 1rem;
+      }
+      .nav-tag{
+        width: 100%;
+        /* margin: 1rem 0; */
+    
+     }
+
+     /* ******top card*** */
+
+     .earning-card{
+      width:10rem;
+      height: 4.2rem;
+     
+     }
+     .Board-left{
+      margin-top: 1rem;
+     }
+     .earning-contant{
+      width: 3.5rem;
+      height: 3.5rem;
+      font-size: 1.6rem;
+     }
+     .earn-contant-box .earn-contant-num{
+      font-size: 0.9rem;
+     
+     }
+     .earn-contant-box small{
+      font-size: 0.6rem;
+
+       }
+       .earn-contant-box{
+        line-height: 0.8rem;
+       }
+/* *****overweiv *** */
+.month {
+  font-size: 0.5rem; 
+} 
+
+.graf-col{
+width: 6%;
+display: flex;
+flex-direction: column-reverse;
+}
+.graf-row{
+  height: 22vh;
+}
+.table-card{
+  width: 100%; /* Use 100% to match the parent's width */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow-x:scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+.nav-heading{
+  float: left;
+}
+
+.user-profile{
+  width: 45%;
+  height: 3rem;
+  top: 0.3rem;
+
+  right: 1.3rem;
+ }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px)  and (max-width: 988px)  {
+    .product-table{
+      width: 100%; /* Use 100% to match the parent's width */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Hide vertical scrollbar */
+    }
+    
+
+    
+    
+    /* Define tablet-specific styles here */
+    .earning-card{
+      width:14rem;
+      height: 6rem;
+     
+     }
+    
+     .earning-contant{
+      width: 4rem;
+      height: 4rem;
+      font-size: 2rem;
+     }
+     .earn-contant-box .earn-contant-num{
+      font-size: 1rem;
+     
+     }
+     .earn-contant-box small{
+      font-size: 0.7rem;
+
+       }
+       .earn-contant-box{
+        line-height: 1rem;
+       }
+
+       /* *****overweiv *** */
+.month {
+  font-size: 0.8rem; 
+} 
+.graf-row{
+  height: 30vh;
+}
+
+.table-card{
+  width: 100%; /* Use 100% to match the parent's width */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow-x:scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  
+}    
+  }
+  
+  /* PC Styles */
+  @media (min-width: 1024px) {
+    /* Define PC-specific styles here */
+  }
+  
+  
+  
